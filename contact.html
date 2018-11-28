@@ -8,21 +8,80 @@ Most recent revision:
 
 <html lang="en">
     <head>
-        <title></title>
+        <title>Sandw/chips: Contact Us</title>
     </head>
     
     <body>
         <header>
-            <h1></h1>
+            <center><h1>Sandw/chips</h1></center>
         </header>
         
         <nav>
-        
+            <hr />
+            <p><a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp; 
+                <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="contact.html">Contact Us</a></p>
+            <hr />
         </nav>
         
+        <article>
+            <form action="submit.html" method="Post">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name"><br />
+                
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email"><br />
+                
+                <label for="phone">Phone: </label>
+                <input type="text" id="phone" name="phone"><br />
+                
+                <label for="reason">Reason for Inquiry: </label>
+                <select id="reason" name="reason">
+                    <option value="catering" selected>Catering</option>
+                    <option value="privateParty">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select><br />
+                
+                <label for="info">Additional Information: </label>
+                <textarea id="info" name="info"></textarea><br />
+                
+                <fieldset>
+                    <legend>Have you been to the restaurant? </legend>
+                    
+                    <input type="radio" id="choice1" name="haveBeen" value="no">
+                    <label for="choice1">No</label>
+                    
+                    <input type="radio" id="choice2" name="haveBeen" value="yes">
+                    <label for="choice2">Yes</label><br /> 
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Best days to contact you: </legend>
+                    <input type="checkbox" id="monday" name="contact" value="monday">
+                    <label for="monday">M</label>
+                    
+                    <input type="checkbox" id="tuesday" name="contact" value="tuesday">
+                    <label for="tuesday">T</label>
+                    
+                    <input type="checkbox" id="wednesday" name="contact" value="wednesday">
+                    <label for="wednesday">W</label>
+                    
+                    <input type="checkbox" id="thursday" name="contact" value="thursday">
+                    <label for="thursday">Th</label>
+                    
+                    <input type="checkbox" id="friday" name="contact" value="friday">
+                    <label for="friday">F</label>
+                </fieldset>
+                
+                <input type="submit" name="submit" value="Send Request">
+            </form>    
+        </article>
         
         <footer>
-        
+            <hr />
+            <p> 514 1st St, Minneapolis, MN, 55404</p>
+            <p>(612)-703-5893</p>
         </footer>
     </body>
 </html>
