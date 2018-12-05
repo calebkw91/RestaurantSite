@@ -17,6 +17,11 @@ header{
     margin-top: 20px;
 }
 
+.jumbotron{
+    background-color: #3a6ea5;
+    color: #efefef;
+}
+
 header h1{
     font-size: 4.0em;
 }
