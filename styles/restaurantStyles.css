@@ -1,8 +1,13 @@
 /*
 Name: Caleb Walker
 Date Created: 11/30/18
-Most recent revision: 11/30/18
+Most recent revision: 12/11/18
 */
+
+@font-face {
+  font-family: anton;
+  src: url(https://fonts.googleapis.com/css?family=Anton);
+}
 
 body {
     background-color: #ebebeb;
@@ -13,7 +18,7 @@ body {
 header{
     background-color: #3a6ea5;
     color: #efefef;
-    font-family: fantasy;
+    font-family: anton;
     margin-top: 20px;
 }
 

@@ -3,7 +3,7 @@
 <!--
 Name: Caleb Walker
 Date Created: 11/27/18
-Most recent revision: 12/4/18
+Most recent revision: 12/11/18
 -->
 
 <html lang="en">
@@ -20,13 +20,15 @@ Most recent revision: 12/4/18
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
         
         <style>
-            .required{
+            .requiredLabel{
                 font-weight: bold;
             }
             
-            input[type=text]{
+            .required{
                 border: 1px solid #303037;
-                width: 50%;
+            }
+            
+            input[type=text]{
                 padding: 8px 8px;
                 margin: 12px 0;
                 box-sizing: border-box;
@@ -35,6 +37,7 @@ Most recent revision: 12/4/18
             
             form{
                 margin-left: 50px;
+                margin-right: 50px;
             }
             
         </style>
@@ -58,55 +61,60 @@ Most recent revision: 12/4/18
             
             <form name="contactForm" onsubmit="return formSubmit();" method="Post">
                 <div class="form-group row">
-                    <div class="col-md-1"></div>
-                    <label class="required col-md-3 col-form-label" for="name">Name: </label>
-                    <div class="col-md-8">
-                        <input type="text" id="name" name="name">
+                    <div class="col-lg-2"></div>
+                    <label for="name" class="requiredLabel col-lg-2 col-form-label">Name: </label>
+                    <div class="col-lg-6">
+                        <input class="required form-control" type="text" id="name" name="name">
                     </div>
+                    <div class="col-lg-2"></div>
                 </div>
 
                 <div class="form-group row">
-                    <div class="col-md-1"></div>
-                    <label class="required col-md-3 col-form-label" for="email">Email: </label>
-                    <div class="col-md-8">
-                        <input type="text" id="email" name="email">
+                    <div class="col-lg-2"></div>
+                    <label for="email" class="requiredLabel col-lg-2 col-form-label">Email: </label>
+                    <div class="col-lg-6">
+                        <input class="required form-control" type="text" id="email" name="email">
                     </div>
+                    <div class="col-lg-2"></div>
                 </div>
 
                 <div class="form-group row">
-                    <div class="col-md-1"></div>
-                    <label class="required col-md-3 col-form-label" for="phone">Phone: </label>
-                    <div class="col-md-8">
-                        <input type="text" id="phone" name="phone">
+                    <div class="col-lg-2"></div>
+                    <label for="phone" class="requiredLabel col-lg-2 col-form-label">Phone: </label>
+                    <div class="col-lg-6">
+                        <input class="required form-control" type="text" id="phone" name="phone">
                     </div>
+                    <div class="col-lg-2"></div>
                 </div>
 
                 <div class="form-group row">
-                    <div class="col-md-1"></div>
-                    <label class="col-md-3 col-form-label" for="reason">Reason for Inquiry: </label>
-                    <div class="col-md-8">
-                        <select id="reason" name="reason">
+                    <div class="col-lg-2"></div>
+                    <label class="col-lg-2 col-form-label" for="reason">Reason for Inquiry: </label>
+                    <div class="col-lg-6">
+                        <select class="form-control" id="reason" name="reason">
                             <option value="catering" selected>Catering</option>
                             <option value="privateParty">Private Party</option>
                             <option value="feedback">Feedback</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
+                    <div class="col-lg-2"></div>
                 </div>
 
                 <div class="form-group row">
-                    <div class="col-md-1"></div>
-                    <label class="col-md-3 col-form-label" for="info">Additional Information: </label>
-                    <div class="col-md-8">
-                        <textarea id="info" name="info"></textarea>
+                    <div class="col-lg-2"></div>
+                    <label class="col-lg-2 col-form-label" for="info">Additional Information: </label>
+                    <div class="col-lg-6">
+                        <textarea class="form-control" rows="3" id="info" name="info"></textarea>
                     </div>
+                    <div class="col-lg-2"></div>
                 </div>
 
                 <fieldset class="form-group">
                     <div class="row">
-                        <div class="col-md-1"></div>
-                        <legend class="col-form-label col-md-3 pt-0">Have you been to the restaurant? </legend>
-                        <div class="col-md-8">
+                        <div class="col-lg-2"></div>
+                        <legend class="col-form-label col-lg-2 pt-0">Have you been to the restaurant? </legend>
+                        <div class="col-lg-8">
                             <div class="form-check-inline">
                                 <input class="form-check-input" type="radio" id="choice1" name="haveBeen" value="no">
                                 <label class="form-check-label" for="choice1">No</label>
@@ -122,9 +130,9 @@ Most recent revision: 12/4/18
 
                 <fieldset class="form-group">
                     <div class="row">
-                        <div class="col-md-1"></div>
-                        <legend class="col-form-label col-md-3 pt-0">Best days to contact you: </legend>
-                        <div class="col-md-8">
+                        <div class="col-lg-2"></div>
+                        <legend class="col-form-label col-lg-2 pt-0">Best days to contact you: </legend>
+                        <div class="col-lg-8">
                             <div class="form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="monday" name="contact" value="monday">
                                 <label class="form-check-label" for="monday">M</label>
