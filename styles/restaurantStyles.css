@@ -4,13 +4,11 @@ Date Created: 11/30/18
 Most recent revision: 12/11/18
 */
 
-@font-face {
-  font-family: anton;
-  src: url(https://fonts.googleapis.com/css?family=Anton);
-}
+@import url('https://fonts.googleapis.com/css?family=Anton|Slabo+27px');
 
 body {
     background-color: #ebebeb;
+    font-family: Slabo+27px;
     color: #585858;
     margin: 0 auto;
 }
