@@ -16,7 +16,7 @@ function formSubmit(){
         return false;
     }
     
-    if(contactPhone == ""){
+    if(contactPhone == "" || isNaN(contactPhone)){
         alert("Phone number must be filled in.");
         document.forms["contactForm"]["phone"].focus();
         return false;
