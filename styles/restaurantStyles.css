@@ -9,7 +9,7 @@ Most recent revision: 12/11/18
 body {
     background-color: #ebebeb;
     font-family: Slabo+27px;
-    color: #585858;
+    color: black;
     margin: 0 auto;
 }
 
@@ -17,7 +17,6 @@ header{
     background-color: #3a6ea5;
     color: #efefef;
     font-family: anton;
-    margin-top: 20px;
 }
 
 .jumbotron{
@@ -35,7 +34,7 @@ footer{
     text-align: center;
 }
 
-nav{
+/* nav{
     border-top: thin #ebebeb solid;
     border-bottom: thin #ebebeb solid;
     margin: 10px;
@@ -48,7 +47,7 @@ nav a:visited{
 nav .btn{
     background-color: #273043;
     color: #ebebeb;
-}
+} */
             
 nav .btn:hover{
     font-weight: bold;
